@@ -1,0 +1,6 @@
+bin/
+obj/
+.vscode/
+.NETCoreApp,Version=*/
+*.user
+*.suo
