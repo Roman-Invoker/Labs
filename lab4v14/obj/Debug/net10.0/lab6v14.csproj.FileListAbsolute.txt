@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\bin\Debug\net10.0\lab6v14.exe
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\bin\Debug\net10.0\lab6v14.deps.json
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\bin\Debug\net10.0\lab6v14.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\bin\Debug\net10.0\lab6v14.dll
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\bin\Debug\net10.0\lab6v14.pdb
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.sourcelink.json
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.dll
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\refint\lab6v14.dll
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.pdb
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\lab6v14.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\Homeeeee\lab4v14\obj\Debug\net10.0\ref\lab6v14.dll
