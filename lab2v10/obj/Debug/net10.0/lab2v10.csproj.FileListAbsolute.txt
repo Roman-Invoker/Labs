@@ -1,0 +1,14 @@
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\bin\Debug\net10.0\lab2v10.exe
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\bin\Debug\net10.0\lab2v10.deps.json
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\bin\Debug\net10.0\lab2v10.runtimeconfig.json
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\bin\Debug\net10.0\lab2v10.dll
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\bin\Debug\net10.0\lab2v10.pdb
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.AssemblyInfoInputs.cache
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.AssemblyInfo.cs
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.dll
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\refint\lab2v10.dll
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.pdb
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\lab2v10.genruntimeconfig.cache
+C:\Users\Admin\OOP-ЛевчукРоман\lab2v10\obj\Debug\net10.0\ref\lab2v10.dll
