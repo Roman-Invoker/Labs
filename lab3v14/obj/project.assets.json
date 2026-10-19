@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Homeeeee\\lab3v14\\lab3v14.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab3v14\\lab3v14.csproj",
       "projectName": "lab3v14",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Homeeeee\\lab3v14\\lab3v14.csproj",
+      "projectPath": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab3v14\\lab3v14.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Homeeeee\\lab3v14\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab3v14\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

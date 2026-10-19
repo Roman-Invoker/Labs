@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q8rVE4N2444=",
+  "dgSpecHash": "dPXZePWLPrQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Homeeeee\\lab8v14\\lab8v14.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab5v14\\lab8v14.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
