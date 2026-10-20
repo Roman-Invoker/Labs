@@ -32,7 +32,7 @@ class Program
         Console.WriteLine();
         Console.WriteLine("=== Сценарій 2: Обробка файлів (абстрактний клас) ===");
 
-        // Тестові файли створюються в коді, тож проєкт самодостатній
+      
         File.WriteAllLines("sample.txt", new[]
         {
             "Перший рядок",
@@ -61,7 +61,7 @@ class Program
 
         foreach (FileProcessor processor in processors)
         {
-            processor.Process(); // поліморфний виклик
+            processor.Process(); 
         }
     }
 }
