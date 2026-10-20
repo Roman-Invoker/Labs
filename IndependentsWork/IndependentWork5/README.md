@@ -237,10 +237,6 @@ using (MemoryStream memoryStream = new MemoryStream(data))
 ---
 
 ### Скріншот
-
-> Тут має бути скріншот консолі після запуску програми (`dotnet run`).
-> Збережіть зображення як `screenshots/example.png`, і воно з'явиться нижче.
-
 ![Скріншот виконання програми]![alt text](image.png)
 
 ---
