@@ -1,9 +1,6 @@
 # Лабораторна робота №6 — Наслідування (`base`, `virtual`, `override`, `new`)
 
 **Дисципліна:** Об'єктно-орієнтоване програмування
-**Проєкт:** `OOP-Levchuk/lab6v14`
-**Варіант:** 14 — ієрархія `Electronic` → `Television` → `Radio`
-**GitHub:** <!-- TODO: вставити посилання на репозиторій -->
 
 ## Опис ієрархії
 
@@ -15,61 +12,9 @@
 
 `Television` та `Radio` успадковують `Electronic` напряму. Обидва викликають `base.TurnOn()` у своєму `override`, тому спочатку виконується частина базового класу, а потім власна.
 
-## Структура проєкту
-
-```
-OOP-Levchuk/lab6v14/
-├── lab6v14.csproj
-├── Program.cs        # демонстрація в Main
-├── Electronic.cs
-├── Television.cs
-├── Radio.cs
-└── docs/
-    └── screenshot.png   # знімок консольного виводу
-```
-
-## Запуск
-
-```bash
-dotnet new console -o OOP-Levchuk/lab6v14   # якщо створюєте проєкт з нуля
-cd OOP-Levchuk/lab6v14
-dotnet run
-```
-
 ## Приклад виводу
 
-![Знімок консольного виводу](docs/screenshot.png)
-
-<!-- TODO: запустити `dotnet run`, зробити знімок екрана і зберегти як docs/screenshot.png -->
-
-Очікуваний текст виводу:
-
-```text
-=== 1. Виклик через посилання власного типу ===
-[Electronic] Generic вмикається. Споживання: 50 Вт.
-[Electronic] Samsung вмикається. Споживання: 120 Вт.
-[Television] Екран 4K активовано.
-[Electronic] Sony вмикається. Споживання: 15 Вт.
-[Radio] Діапазон FM 87.5-108 МГц налаштовано.
-
-=== 2. Поліморфізм: посилання базового типу (virtual/override) ===
-[Electronic] Generic вмикається. Споживання: 50 Вт.
-[Electronic] Samsung вмикається. Споживання: 120 Вт.
-[Television] Екран 4K активовано.
-[Electronic] Sony вмикається. Споживання: 15 Вт.
-[Radio] Діапазон FM 87.5-108 МГц налаштовано.
-
-=== 3. Власні методи похідних класів ===
-[Television] Samsung: перемикання на канал 5.
-[Radio] Sony: налаштування на станцію 101.7 МГц.
-
-=== 4. Різниця між override та new ===
-tv.GetElectronicType()        -> Телевізор
-tvAsBase.GetElectronicType()  -> Електронний пристрій
-tvAsBase.TurnOn() (override):
-[Electronic] Samsung вмикається. Споживання: 120 Вт.
-[Television] Екран 4K активовано.
-```
+![Знімок консольного виводу](![alt text](image.png))
 
 ### Що демонструє вивід
 
