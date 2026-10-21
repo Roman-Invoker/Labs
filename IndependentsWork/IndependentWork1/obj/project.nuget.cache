@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J5iAy4KqlSI=",
+  "dgSpecHash": "7wWaCXikzcw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\Самостійні_роботи\\IndependentWork1\\IndependentWork1.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\Labs\\IndependentsWork\\IndependentWork1\\IndependentWork1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",

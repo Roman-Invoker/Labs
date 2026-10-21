@@ -24,24 +24,24 @@ class Program
         var numbers = new List<int> { 5, 12, 8, 21, 3, 17, 10 };
         Console.WriteLine($"Числа: {Join(numbers)}");
 
-        // Map: лямбда-вираз піднесення до квадрата
+        
         var squares = CollectionUtils.Map(numbers, n => n * n);
         Console.WriteLine($"Map (квадрати): {Join(squares)}");
 
-        // Filter: лямбда-предикат парності
+        
         var evens = CollectionUtils.Filter(numbers, n => n % 2 == 0);
         Console.WriteLine($"Filter (парні): {Join(evens)}");
 
-        // MaxBy: два різні селектори ключа
+    
         Console.WriteLine($"MaxBy (найбільше): {CollectionUtils.MaxBy(numbers, n => n)}");
         Console.WriteLine($"MaxBy (найбільша остання цифра): {CollectionUtils.MaxBy(numbers, n => n % 10)}");
 
-        // ForEach: дія над кожним елементом
+        
         Console.Write("ForEach (парні по одному):");
         CollectionUtils.ForEach(evens, n => Console.Write($" [{n}]"));
         Console.WriteLine();
 
-        // ForEach із замиканням: лямбда змінює локальну змінну
+      
         int sum = 0;
         CollectionUtils.ForEach(numbers, n => sum += n);
         Console.WriteLine($"ForEach (сума через замикання): {sum}");
@@ -98,7 +98,7 @@ class Program
         CollectionUtils.ForEach(products, p => total += p.Price);
         Console.WriteLine($"ForEach (загальна вартість через замикання): {total} грн");
 
-        // Ланцюжок: результат одного методу передається наступному
+      
         Console.WriteLine("Ланцюжок Filter -> Map -> ForEach:");
         CollectionUtils.ForEach(
             CollectionUtils.Map(CollectionUtils.Filter(products, p => p.Price > 1000), p => p.Name.ToUpper()),
@@ -121,7 +121,7 @@ class Program
         Console.WriteLine($"Filter == Where: {CollectionUtils.Filter(numbers, n => n % 2 == 0).SequenceEqual(numbers.Where(n => n % 2 == 0))}");
         Console.WriteLine($"MaxBy == Enumerable.MaxBy: {ReferenceEquals(CollectionUtils.MaxBy(products, p => p.Price), products.MaxBy(p => p.Price))}");
 
-        // Eager (власний Map) проти deferred (LINQ Select)
+        
         int calls = 0;
         var mapped = CollectionUtils.Map(numbers, n => { calls++; return n * 2; });
         Console.WriteLine($"Виклики лямбди одразу після Map: {calls}");
