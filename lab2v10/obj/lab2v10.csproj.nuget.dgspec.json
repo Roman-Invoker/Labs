@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab2v10\\lab2v10.csproj": {}
+    "C:\\Users\\Admin\\Documents\\Labs\\lab2v10\\lab2v10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab2v10\\lab2v10.csproj": {
+    "C:\\Users\\Admin\\Documents\\Labs\\lab2v10\\lab2v10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab2v10\\lab2v10.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\Labs\\lab2v10\\lab2v10.csproj",
         "projectName": "lab2v10",
-        "projectPath": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab2v10\\lab2v10.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\Labs\\lab2v10\\lab2v10.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\robot-repair-левчук\\My project (1)\\Labs\\lab2v10\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\Labs\\lab2v10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

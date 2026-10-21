@@ -26,7 +26,7 @@ radio.TuneStation(101.7);
 
 Console.WriteLine();
 Console.WriteLine("=== 4. Різниця між override та new ===");
-Electronic tvAsBase = tv; // той самий об'єкт, але посилання базового типу
+Electronic tvAsBase = tv; 
 Console.WriteLine($"tv.GetElectronicType()        -> {tv.GetElectronicType()}");
 Console.WriteLine($"tvAsBase.GetElectronicType()  -> {tvAsBase.GetElectronicType()}");
 Console.WriteLine("tvAsBase.TurnOn() (override):");
