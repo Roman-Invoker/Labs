@@ -10,7 +10,7 @@ namespace IndependentWork11;
 /// </summary>
 public static class Benchmark
 {
-    // Результат присвоюється сюди, щоб JIT не вилучив виклик як мертвий код
+    
     private static object? _sink;
 
     /// <summary>

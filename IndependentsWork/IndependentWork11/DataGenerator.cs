@@ -10,7 +10,7 @@ public static class DataGenerator
         "Електроніка", "Одяг", "Книги", "Дім та сад", "Спорт", "Іграшки"
     };
 
-    // По 10 товарів у кожній категорії (разом 60)
+    
     private static readonly string[][] ProductNames =
     {
         new[] { "Смартфон", "Ноутбук", "Навушники", "Планшет", "Монітор", "Клавіатура", "Миша", "Зарядний пристрій", "Колонка", "Смарт-годинник" },
@@ -54,7 +54,7 @@ public static class DataGenerator
             }
         }
 
-        // Клієнти: 10 імен x 8 прізвищ = 80 унікальних поєднань
+    
         var customers = new List<Customer>();
         for (int i = 0; i < FirstNames.Length * LastNames.Length; i++)
         {
@@ -66,8 +66,7 @@ public static class DataGenerator
             });
         }
 
-        // Продажі: розподіл за товарами зміщено до перших товарів (квадрат випадкового числа),
-        // щоб "найпопулярніші" товари справді відрізнялися від решти
+        
         var sales = new List<Sale>(salesCount);
         DateTime start = new DateTime(2024, 1, 1);
         for (int i = 1; i <= salesCount; i++)
@@ -79,7 +78,7 @@ public static class DataGenerator
                 Id = i,
                 ProductId = products[productIndex].Id,
                 Quantity = random.Next(1, 11),
-                SaleDate = start.AddDays(random.Next(0, 731)), // 2024-01-01 ... 2025-12-31
+                SaleDate = start.AddDays(random.Next(0, 731)), 
                 CustomerId = random.Next(1, customers.Count + 1)
             });
         }

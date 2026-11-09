@@ -9,8 +9,7 @@ class Program
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-        // dotnet run                          -> пайплайни на стандартних даних + час
-        // dotnet run -c Release -- benchmark  -> залежність часу від кількості продажів
+        
         if (args.Length > 0 && args[0].Equals("benchmark", StringComparison.OrdinalIgnoreCase))
         {
             RunScalabilityBenchmark();
@@ -46,7 +45,6 @@ class Program
             () => Pipelines.TopCustomersWithFavoriteCategory(data.Sales, data.Products, data.Customers),
             PrintTopCustomers, coldTimes);
 
-        // Повторні вимірювання після розігріву: середній час одного виклику
         var warmFunctions = new List<Func<object>>
         {
             () => Pipelines.TopProductsByCategory(data.Sales, data.Products),
@@ -64,7 +62,7 @@ class Program
         }
     }
 
-    // Для кожного пайплайну створюється новий Stopwatch; друк у вимірювання не входить
+    
     static void RunPipeline<T>(string title, Func<T> pipeline, Action<T> print, List<(string, double)> coldTimes)
     {
         Console.WriteLine($"--- {title} ---");

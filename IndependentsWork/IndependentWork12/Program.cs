@@ -9,10 +9,6 @@ class Program
         Console.OutputEncoding = Encoding.UTF8;
         CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-        // dotnet run -c Release            -> усе (1M, 5M, 10M елементів; кілька хвилин)
-        // dotnet run -c Release -- quick   -> усе на менших колекціях (100k, 500k, 1M)
-        // dotnet run -c Release -- perf    -> лише порівняння продуктивності
-        // dotnet run -c Release -- side    -> лише побічні ефекти
         string mode = args.Length > 0 ? args[0].ToLowerInvariant() : "all";
         bool quick = mode == "quick";
         bool doPerf = mode is "all" or "quick" or "perf";
@@ -43,7 +39,7 @@ class Program
             Console.WriteLine(table);
 
             Console.WriteLine("=== Експеримент 2: залежність від кількості потоків ===");
-            Operation heavy = Operations.All[1]; // "Складні математичні перетворення"
+            Operation heavy = Operations.All[1];
             int scalingSize = sizes[1];
             var (linqMs, scalingRows) = PerformanceExperiments.RunParallelismScaling(heavy, scalingSize);
             string scalingTable = PerformanceExperiments.FormatScaling(linqMs, scalingRows);

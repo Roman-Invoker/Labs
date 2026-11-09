@@ -9,14 +9,10 @@ public record ExperimentRow(int Size, string Operation, double LinqMs, double Pl
 
 public record ParallelismRow(int Degree, double Milliseconds);
 
-/// <summary>
-/// Порівняння продуктивності LINQ і PLINQ (завдання 2-4).
-/// </summary>
+
 public static class PerformanceExperiments
 {
-    /// <summary>
-    /// Колекція випадкових чисел від 1 до 1 000 000 (фіксований seed - дані однакові під час кожного запуску).
-    /// </summary>
+    
     public static List<int> GenerateData(int size, int seed = 42)
     {
         var random = new Random(seed);
@@ -44,10 +40,7 @@ public static class PerformanceExperiments
         return query.Where(op.Predicate).Select(op.Selector).ToList();
     }
 
-    /// <summary>
-    /// Експеримент 1: кожна операція на кожному розмірі колекції, LINQ проти PLINQ.
-    /// Час - середнє за runs запусків після розігріву.
-    /// </summary>
+    
     public static List<ExperimentRow> RunExperiments(int[] sizes, int runs = 3)
     {
         var rows = new List<ExperimentRow>();
@@ -78,9 +71,7 @@ public static class PerformanceExperiments
         return rows;
     }
 
-    /// <summary>
-    /// Експеримент 2: залежність часу від кількості потоків (WithDegreeOfParallelism).
-    /// </summary>
+   
     public static (double LinqMs, List<ParallelismRow> Rows) RunParallelismScaling(Operation op, int size, int runs = 3)
     {
         List<int> data = GenerateData(size);
@@ -112,7 +103,7 @@ public static class PerformanceExperiments
 
         for (int i = 0; i < runs; i++)
         {
-            // Прибирання сміття перед кожним запуском зменшує вплив GC на вимірювання
+            
             GC.Collect();
             GC.WaitForPendingFinalizers();
             GC.Collect();
@@ -128,10 +119,7 @@ public static class PerformanceExperiments
         return total / runs;
     }
 
-    /// <summary>
-    /// PLINQ без AsOrdered не гарантує порядок, тому порівнюємо кількість і суму
-    /// (з допуском на різний порядок додавання чисел з плаваючою комою).
-    /// </summary>
+    
     private static bool ResultsMatch(List<double> linq, List<double> plinq)
     {
         if (linq.Count != plinq.Count)
@@ -144,7 +132,7 @@ public static class PerformanceExperiments
         return Math.Abs(a - b) <= 1e-9 * Math.Max(1.0, Math.Abs(a));
     }
 
-    // ---------- Форматування ----------
+    
 
     public static string FormatEnvironment()
     {

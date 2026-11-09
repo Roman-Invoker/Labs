@@ -4,10 +4,6 @@ using System.Text;
 
 namespace IndependentWork12;
 
-/// <summary>
-/// Побічні ефекти й потокобезпечність у PLINQ (завдання 5).
-/// Метод повертає текст усього виводу, щоб його можна було зберегти у benchmark-results.md.
-/// </summary>
 public static class SideEffectsDemo
 {
     public static string Run(int size)
@@ -25,7 +21,7 @@ public static class SideEffectsDemo
         Log($"Колекція: {size:N0} чисел. Скільки з них парних (еталон): {expected:N0}");
         Log("");
 
-        // ---------- Проблема 1: спільний лічильник без синхронізації ----------
+        
         Log("--- Проблема 1: спільний лічильник count++ без синхронізації ---");
         for (int run = 1; run <= 5; run++)
         {
@@ -35,7 +31,7 @@ public static class SideEffectsDemo
         }
         Log("");
 
-        // ---------- Проблема 2: спільна колекція List<int> ----------
+        
         Log("--- Проблема 2: List<int>.Add з кількох потоків ---");
         for (int run = 1; run <= 5; run++)
         {
@@ -52,7 +48,6 @@ public static class SideEffectsDemo
         }
         Log("");
 
-        // ---------- Виправлення лічильника ----------
         Log("--- Виправлення 1: лічильник ---");
 
         var sw = Stopwatch.StartNew();
@@ -79,7 +74,7 @@ public static class SideEffectsDemo
         Log($"PLINQ Count() (без спільного стану): {aggregated:N0}  ({sw.Elapsed.TotalMilliseconds:F1} мс) {Check(aggregated, expected)}");
         Log("");
 
-        // ---------- Виправлення колекції ----------
+        
         Log("--- Виправлення 2: збирання елементів у колекцію ---");
 
         var lockedList = new List<int>();
